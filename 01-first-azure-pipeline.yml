@@ -23,6 +23,12 @@ jobs:
       echo more information
     displayName: 'Run a multi-line script'
 - job: job02
+  dependsOn: job01
   steps:
-  - script: echo Job02!
+  - script: echo Krishna!
+    displayName: 'Run a one-line script'
+- job: job03
+  dependsOn: job02
+  steps:
+  - script: echo Ram!
     displayName: 'Run a one-line script'

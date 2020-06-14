@@ -22,7 +22,7 @@ stages:
   - job: QADeployJob
     steps:
     - bash: echo QADeployJob
-- stage: Prod Deploy
+- stage: ProdDeploy
   jobs:
   - job: ProdDeployJob
     steps:
